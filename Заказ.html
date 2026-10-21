@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Заказ вязаного изделия</title>
+</head>
+<body bgcolor="#f5f5dc">
+
+<h2>Оформление заказа</h2>
+
+<form action="https://www.google.com/search" id="UserEnter" name="UserEnter" target="_blank">
+
+    <input type="hidden" name="q" value="Заказ вязаного изделия">
+    <input type="hidden" name="form_name" value="knitting_order">
+
+    <p> Тип изделия:
+        <select name="product_type">
+            <option value="Коточепчик">Коточепчик</option>
+            <option value="Шапка">Шапка</option>
+            <option value="Свитер">Свитер</option>
+            <option value="Капор">Капор</option>
+            <option value="Другое">Другое</option>
+        </select>
+    </p>
+
+    <p> Тип пряжи:
+        <input type="radio" name="yarn" value="Nako Hercai" checked> Nako Hercai
+        <input type="radio" name="yarn" value="Alize Burcum Batik"> Alize Burcum Batik
+    </p>
+
+    <p>
+        Цвет изделия:
+        <input type="text" name="color" value="Синий">
+    </p>
+
+    <p>
+        Количество изделий:
+        <input type="number" name="quantity" value="1" min="1">
+    </p>
+
+    <p>
+        Контактный телефон:
+        <input type="text" name="phone" value="+7">
+    </p>
+
+    <p>
+        Дата заказа:
+        <input type="date" name="order_date" id="order_date">
+    </p>
+
+    <p>
+        Дополнительные пожелания:
+        <input type="checkbox" name="gift_wrap" value="Да" checked> Подарочная упаковка
+    </p>
+
+    <p>
+        Код заказа:
+        <input type="password" name="order_code" value="1234">
+    </p>
+
+    <input type="hidden" name="delivery_type" value="Почта">
+
+    <p>
+        <input type="submit" value="Отправить заказ">
+        <input type="reset" value="Сбросить">
+    </p>
+
+</form>
+
+<script src="order.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма с личными данными</title>
+</head>
+<body>
+
+<form action="https://www.google.com/search" id="UserEnter" name="UserEnter" target="_blank">
+
+    <input type="hidden" name="q" value="Личные данные">
+    <input type="hidden" name="form_name" value="personal_data">
+
+    <p> Фамилия:
+        <input type="text" name="surname" value="Петрова">
+    </p>
+
+    <p> Имя:
+        <input type="text" name="name" value="Мария">
+    </p>
+
+    <p>
+        Группа:
+        <input type="number" name="group" value="1" min="1" max="6">
+    </p>
+
+    <p>
+        Контактный телефон:
+        <input type="text" name="phone" value="+7">
+    </p>
+
+    <p>
+        Дата:
+        <input type="date" name="date" id="date">
+    </p>
+
+    <p> Почта:
+        <input type="text" name="mail">
+    </p>
+
+    <p>
+        <input type="submit" value="Отправить">
+        <input type="reset" value="Сбросить">
+    </p>
+
+</form>
+
+<script src="order.js"></script>
+
+</body>
+</html>

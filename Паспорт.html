@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Изменяем кириллицу на латиницу по клику</title>
+</head>
+ <style type="text/css">
+   html {
+    height: 100%; /* Высота страницы */
+   }
+   body {
+    background-image: url(фото/pasport_shablon.png); /* Путь к фоновому рисунку */
+    background-position: left top; /* Положение фона */
+    background-repeat: no-repeat; /* Отменяем повторение фона */
+  .class{margin-left: 95px;
+      margin-top: 65px;
+  }
+  .date{margin-top: 51px;
+      margin-left: 95px;
+  }
+   .fio{margin-left: 250px;
+       margin-top:186px;
+   }
+   .name{margin-left: 250px;
+       margin-top:27px
+   }
+   .info{margin-left:164px;
+       margin-top:27px
+   }
+   .png{margin-left: 18px;
+       margin-top: -68px;
+   }
+   .btn{margin-left: 100px;
+   margin-top:30px}
+
+  </style>
+<body>
+<div class="class">УФМС РОССИИ по г. Санкт-Петербург</div>
+<div class="date">05.11.2021 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 800-353</div>
+<div class="fio">Комарова</div>
+<div class="name">Арина</div>
+<div class="info">жен &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 06/06/2007</div>
+<div class="png">
+    <img src="фото/силуэт.jpg" width="120" height="120"></div>
+
+<button class="btn" id="change"> Заменить</button>
+
+</body>
+
+<script src="change.js"></script>
+
+</html>
